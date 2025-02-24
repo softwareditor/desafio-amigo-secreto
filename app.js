@@ -36,20 +36,20 @@ function limpiarCaja(){
 }
 
 function sortearAmigo(){
-    if (amigos.length < 2) {
-        alert("Debe haber al menos 2 amigos para hacer el sorteo.");
+    if (amigos.length <1) {
+        alert("Para iniciar el sorteo, debes introducir al menos 2 nombres.");
         return;  
     }else if (amigos.length === 1) {
         let amigoSeleccionado = amigos[0];
-        asignarTextoElemento("#resultado", `El amigo secreto es: ${amigoSeleccionado}`);
+        asignarTextoElemento("#resultado", `¡Eureka! ¡Este es tu amigo(a) secreto(a)!: ${amigoSeleccionado}`);
         amigos = []; 
         recorrerLista();  
-        alert("El último amigo ha sido sorteado, el juego se reiniciará.");
+        alert("Todos los amigos fueron sorteados. ¡Que reinicie el juego!");
         reiniciarJuego(); 
         return; 
     }else{
     let amigoSeleccionado = amigos[Math.floor(Math.random()*amigos.length)];
-    asignarTextoElemento("#resultado",`El amigo secreto es: ${amigoSeleccionado}`)
+    asignarTextoElemento("#resultado",`¡Eureka! ¡Este es tu amigo(a) secreto(a)!: ${amigoSeleccionado}`)
     amigos = amigos.filter(amigo => amigo !== amigoSeleccionado);
     recorrerLista();
     }
