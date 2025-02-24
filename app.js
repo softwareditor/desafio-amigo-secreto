@@ -20,9 +20,9 @@ function asignarTextoElemento(elemto,texto){
 function agregarAmigo(){
     let valorCaja = document.getElementById("amigo").value.trim();
     if (valorCaja === ""){
-        alert("El campo no puede estar vacio")
+        alert("El campo está vacío. Por favor, ingresa un nombre.")
     }else if (amigos.includes(valorCaja)){
-        alert("Este nombre ya se encuentra en la lista")
+        alert("Este nombre ya forma parte de la lista.")
         limpiarCaja();
     }else{
         amigos.push(valorCaja);
