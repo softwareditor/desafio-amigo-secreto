@@ -1,5 +1,4 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+// Desafío Amigo Secreto: el principal objetivo de este challenge es fortalecer las habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let amigos =[];
 console.log(amigos);
 
